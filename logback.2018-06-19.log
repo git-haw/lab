@@ -1,0 +1,373 @@
+12:52:11.993 logback [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19dc67c2: startup date [Tue Jun 19 12:52:11 CST 2018]; root of context hierarchy
+12:52:12.524 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+12:52:15.281 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+12:52:15.289 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12:52:15.290 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+12:52:15.370 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+12:52:15.370 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3379 ms
+12:52:15.473 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+12:52:15.476 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+12:52:15.477 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+12:52:15.477 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+12:52:15.477 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+12:52:15.855 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19dc67c2: startup date [Tue Jun 19 12:52:11 CST 2018]; root of context hierarchy
+12:52:15.939 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String top.haw.web.Example.home()
+12:52:15.943 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+12:52:15.944 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+12:52:15.974 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+12:52:15.974 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+12:52:16.012 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+12:52:16.153 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+12:52:16.205 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-127.0.0.1-8080"]
+12:52:16.210 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-127.0.0.1-8080"]
+12:52:16.235 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+12:52:16.385 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+12:53:33.351 logback [http-nio-127.0.0.1-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+12:53:33.356 logback [http-nio-127.0.0.1-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+12:53:33.437 logback [http-nio-127.0.0.1-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 80 ms
+12:53:33.500 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - URL : http://localhost:8080/
+12:53:33.500 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - HTTP_METHOD : GET
+12:53:33.500 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - IP : 127.0.0.1
+12:53:33.501 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - CLASS_METHOD : top.haw.web.Example.home
+12:53:33.501 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - ARGS : []
+12:53:33.504 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - RESPONSE : Hello World
+13:00:20.717 logback [Thread-3] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19dc67c2: startup date [Tue Jun 19 12:52:11 CST 2018]; root of context hierarchy
+13:00:20.718 logback [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+13:03:45.299 logback [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19dc67c2: startup date [Tue Jun 19 13:03:45 CST 2018]; root of context hierarchy
+13:03:45.716 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+13:03:47.142 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+13:03:47.150 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+13:03:47.151 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+13:03:47.259 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+13:03:47.260 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1981 ms
+13:03:47.368 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+13:03:47.371 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+13:03:47.372 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+13:03:47.372 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+13:03:47.372 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+13:03:48.544 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19dc67c2: startup date [Tue Jun 19 13:03:45 CST 2018]; root of context hierarchy
+13:03:48.760 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String top.haw.web.Example.home()
+13:03:48.765 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+13:03:48.767 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+13:03:48.842 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:03:48.843 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:03:48.945 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:03:49.221 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+13:03:49.253 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-127.0.0.1-8080"]
+13:03:49.261 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-127.0.0.1-8080"]
+13:03:49.297 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+13:03:49.329 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+13:04:19.100 logback [http-nio-127.0.0.1-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+13:04:19.100 logback [http-nio-127.0.0.1-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+13:04:19.114 logback [http-nio-127.0.0.1-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+13:04:19.134 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - URL : http://localhost:8080/
+13:04:19.134 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - HTTP_METHOD : GET
+13:04:19.134 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - IP : 127.0.0.1
+13:04:19.137 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - CLASS_METHOD : top.haw.web.Example.home
+13:04:19.137 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - ARGS : []
+13:04:19.139 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - RESPONSE : Hello World
+13:04:31.694 logback [Thread-3] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19dc67c2: startup date [Tue Jun 19 13:03:45 CST 2018]; root of context hierarchy
+13:04:31.696 logback [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+13:06:52.647 logback [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19dc67c2: startup date [Tue Jun 19 13:06:52 CST 2018]; root of context hierarchy
+13:06:52.865 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+13:06:54.055 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+13:06:54.064 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+13:06:54.065 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+13:06:54.129 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+13:06:54.129 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1483 ms
+13:06:54.245 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+13:06:54.250 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+13:06:54.251 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+13:06:54.251 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+13:06:54.251 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+13:06:54.555 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19dc67c2: startup date [Tue Jun 19 13:06:52 CST 2018]; root of context hierarchy
+13:06:54.603 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String top.haw.web.Example.home()
+13:06:54.609 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+13:06:54.610 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+13:06:54.640 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:06:54.640 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:06:54.666 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:06:54.760 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+13:06:54.775 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-127.0.0.1-8080"]
+13:06:54.793 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-127.0.0.1-8080"]
+13:06:54.797 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+13:06:54.818 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+13:07:01.068 logback [http-nio-127.0.0.1-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+13:07:01.069 logback [http-nio-127.0.0.1-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+13:07:01.094 logback [http-nio-127.0.0.1-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+13:08:37.201 logback [Thread-3] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19dc67c2: startup date [Tue Jun 19 13:06:52 CST 2018]; root of context hierarchy
+13:08:37.204 logback [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+13:43:33.357 logback [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19dc67c2: startup date [Tue Jun 19 13:43:33 CST 2018]; root of context hierarchy
+13:43:35.149 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+13:43:41.070 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+13:43:41.314 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+13:43:41.316 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+13:43:41.647 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+13:43:41.647 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 8293 ms
+13:43:41.879 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+13:43:41.884 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+13:43:41.955 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+13:43:41.956 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+13:43:41.956 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+13:43:42.859 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19dc67c2: startup date [Tue Jun 19 13:43:33 CST 2018]; root of context hierarchy
+13:43:42.930 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String top.haw.web.Example.home()
+13:43:42.933 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+13:43:42.934 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+13:43:42.962 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:43:42.962 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:43:42.988 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:43:43.179 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+13:43:43.212 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-127.0.0.1-8080"]
+13:43:43.239 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-127.0.0.1-8080"]
+13:43:43.263 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+13:43:43.313 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+13:43:50.646 logback [http-nio-127.0.0.1-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+13:43:50.647 logback [http-nio-127.0.0.1-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+13:43:50.692 logback [http-nio-127.0.0.1-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 45 ms
+13:43:50.769 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - URL : http://localhost:8080/
+13:43:50.770 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - HTTP_METHOD : GET
+13:43:50.770 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - IP : 127.0.0.1
+13:43:50.771 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - CLASS_METHOD : top.haw.web.Example.home
+13:43:50.771 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - ARGS : []
+13:43:50.773 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.web.Example - call home()
+13:43:50.774 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - RESPONSE : Hello World
+13:54:25.528 logback [Thread-3] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19dc67c2: startup date [Tue Jun 19 13:43:33 CST 2018]; root of context hierarchy
+13:54:25.531 logback [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+13:54:33.117 logback [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19dc67c2: startup date [Tue Jun 19 13:54:33 CST 2018]; root of context hierarchy
+13:54:33.919 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+13:54:36.523 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+13:54:36.532 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+13:54:36.533 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+13:54:36.593 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+13:54:36.594 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3494 ms
+13:54:36.752 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+13:54:36.756 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+13:54:36.757 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+13:54:36.757 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+13:54:36.757 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+13:54:37.082 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19dc67c2: startup date [Tue Jun 19 13:54:33 CST 2018]; root of context hierarchy
+13:54:37.143 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String top.haw.web.Example.home()
+13:54:37.147 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+13:54:37.148 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+13:54:37.182 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:54:37.183 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:54:37.218 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:54:37.332 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+13:54:37.345 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-127.0.0.1-8080"]
+13:54:37.351 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-127.0.0.1-8080"]
+13:54:37.355 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+13:54:37.365 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+13:54:41.793 logback [http-nio-127.0.0.1-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+13:54:41.793 logback [http-nio-127.0.0.1-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+13:54:41.812 logback [http-nio-127.0.0.1-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+13:54:41.831 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - URL : http://localhost:8080/
+13:54:41.831 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - HTTP_METHOD : GET
+13:54:41.832 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - IP : 127.0.0.1
+13:54:41.833 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - CLASS_METHOD : top.haw.web.Example.home
+13:54:41.833 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - ARGS : []
+13:54:41.837 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.web.Example - call home()
+13:54:41.837 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - RESPONSE : Hello World
+13:54:45.345 logback [http-nio-127.0.0.1-8080-exec-2] INFO  top.haw.aop.WebLogAspect - URL : http://localhost:8080/
+13:54:45.345 logback [http-nio-127.0.0.1-8080-exec-2] INFO  top.haw.aop.WebLogAspect - HTTP_METHOD : GET
+13:54:45.345 logback [http-nio-127.0.0.1-8080-exec-2] INFO  top.haw.aop.WebLogAspect - IP : 127.0.0.1
+13:54:45.345 logback [http-nio-127.0.0.1-8080-exec-2] INFO  top.haw.aop.WebLogAspect - CLASS_METHOD : top.haw.web.Example.home
+13:54:45.345 logback [http-nio-127.0.0.1-8080-exec-2] INFO  top.haw.aop.WebLogAspect - ARGS : []
+13:54:45.345 logback [http-nio-127.0.0.1-8080-exec-2] INFO  top.haw.web.Example - call home()
+13:54:45.345 logback [http-nio-127.0.0.1-8080-exec-2] INFO  top.haw.aop.WebLogAspect - RESPONSE : Hello World
+13:55:34.411 logback [Thread-3] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@19dc67c2: startup date [Tue Jun 19 13:54:33 CST 2018]; root of context hierarchy
+13:55:34.412 logback [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+15:59:07.444 logback [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5340477f: startup date [Tue Jun 19 15:59:07 CST 2018]; root of context hierarchy
+15:59:07.965 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+15:59:11.149 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+15:59:11.157 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15:59:11.158 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+15:59:11.398 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:59:11.399 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3957 ms
+15:59:11.538 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+15:59:11.542 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+15:59:11.543 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+15:59:11.543 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+15:59:11.543 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+15:59:13.175 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5340477f: startup date [Tue Jun 19 15:59:07 CST 2018]; root of context hierarchy
+15:59:13.268 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String top.haw.web.Example.home()
+15:59:13.274 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users1/add],methods=[POST]}" onto public java.lang.String top.haw.web.UserController1.add(top.haw.model.User1,org.springframework.validation.BindingResult)
+15:59:13.274 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users1/get/{id}],methods=[GET]}" onto public top.haw.model.User1 top.haw.web.UserController1.get(java.lang.Long)
+15:59:13.274 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users1/update],methods=[POST]}" onto public java.lang.String top.haw.web.UserController1.update(top.haw.model.User1)
+15:59:13.275 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users1/delete/{id}],methods=[POST]}" onto public java.lang.String top.haw.web.UserController1.delete(java.lang.Long)
+15:59:13.277 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+15:59:13.277 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+15:59:13.315 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+15:59:13.315 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+15:59:13.353 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+15:59:13.802 logback [main] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration': Invocation of init method failed; nested exception is tk.mybatis.mapper.MapperException: tk.mybatis.mapper.MapperException: tk.mybatis.mapper.MapperException: top.haw.mapper.User1Mapper.insert对应的实体类top.haw.model.User1中包含多个MySql的自动增长列,最多只能有一个!
+15:59:13.803 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+15:59:13.807 logback [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+15:59:13.825 logback [localhost-startStop-1] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+15:59:13.884 logback [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+15:59:13.891 logback [main] ERROR o.s.boot.SpringApplication - Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration': Invocation of init method failed; nested exception is tk.mybatis.mapper.MapperException: tk.mybatis.mapper.MapperException: tk.mybatis.mapper.MapperException: top.haw.mapper.User1Mapper.insert对应的实体类top.haw.model.User1中包含多个MySql的自动增长列,最多只能有一个!
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:137)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at top.haw.App.main(App.java:16)
+Caused by: tk.mybatis.mapper.MapperException: tk.mybatis.mapper.MapperException: tk.mybatis.mapper.MapperException: top.haw.mapper.User1Mapper.insert对应的实体类top.haw.model.User1中包含多个MySql的自动增长列,最多只能有一个!
+	at tk.mybatis.mapper.mapperhelper.MapperHelper.setSqlSource(MapperHelper.java:248)
+	at tk.mybatis.mapper.mapperhelper.MapperHelper.processConfiguration(MapperHelper.java:311)
+	at tk.mybatis.mapper.mapperhelper.MapperHelper.processConfiguration(MapperHelper.java:290)
+	at tk.mybatis.mapper.autoconfigure.MapperAutoConfiguration.addPageInterceptor(MapperAutoConfiguration.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:366)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeInitMethods(InitDestroyAnnotationBeanPostProcessor.java:311)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeInitialization(InitDestroyAnnotationBeanPostProcessor.java:134)
+	... 18 common frames omitted
+Caused by: tk.mybatis.mapper.MapperException: tk.mybatis.mapper.MapperException: top.haw.mapper.User1Mapper.insert对应的实体类top.haw.model.User1中包含多个MySql的自动增长列,最多只能有一个!
+	at tk.mybatis.mapper.mapperhelper.MapperTemplate.setSqlSource(MapperTemplate.java:258)
+	at tk.mybatis.mapper.mapperhelper.MapperHelper.setSqlSource(MapperHelper.java:245)
+	... 28 common frames omitted
+Caused by: tk.mybatis.mapper.MapperException: top.haw.mapper.User1Mapper.insert对应的实体类top.haw.model.User1中包含多个MySql的自动增长列,最多只能有一个!
+	at tk.mybatis.mapper.provider.base.BaseInsertProvider.insert(BaseInsertProvider.java:92)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at tk.mybatis.mapper.mapperhelper.MapperTemplate.setSqlSource(MapperTemplate.java:246)
+	... 29 common frames omitted
+16:07:11.100 logback [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5340477f: startup date [Tue Jun 19 16:07:11 CST 2018]; root of context hierarchy
+16:07:11.529 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+16:07:13.415 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+16:07:13.423 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:07:13.424 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+16:07:13.480 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:07:13.480 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2383 ms
+16:07:13.599 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+16:07:13.603 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+16:07:13.603 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+16:07:13.603 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+16:07:13.604 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+16:07:14.484 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5340477f: startup date [Tue Jun 19 16:07:11 CST 2018]; root of context hierarchy
+16:07:14.532 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String top.haw.web.Example.home()
+16:07:14.540 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users1/add],methods=[POST]}" onto public java.lang.String top.haw.web.UserController1.add(top.haw.model.User1,org.springframework.validation.BindingResult)
+16:07:14.540 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users1/get/{id}],methods=[GET]}" onto public top.haw.model.User1 top.haw.web.UserController1.get(java.lang.Long)
+16:07:14.541 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users1/update],methods=[POST]}" onto public java.lang.String top.haw.web.UserController1.update(top.haw.model.User1)
+16:07:14.541 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users1/delete/{id}],methods=[POST]}" onto public java.lang.String top.haw.web.UserController1.delete(java.lang.Long)
+16:07:14.543 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+16:07:14.544 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+16:07:14.584 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:07:14.585 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:07:14.624 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:07:15.124 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+16:07:15.168 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-127.0.0.1-8080"]
+16:07:15.195 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-127.0.0.1-8080"]
+16:07:15.222 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+16:07:15.275 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+16:08:43.418 logback [Thread-3] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5340477f: startup date [Tue Jun 19 16:07:11 CST 2018]; root of context hierarchy
+16:08:43.496 logback [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+16:12:11.189 logback [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5340477f: startup date [Tue Jun 19 16:12:11 CST 2018]; root of context hierarchy
+16:12:12.489 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+16:12:17.700 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+16:12:17.708 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:12:17.709 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+16:12:17.789 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:12:17.790 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6602 ms
+16:12:17.920 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+16:12:17.924 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+16:12:17.924 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+16:12:17.925 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+16:12:17.925 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+16:12:19.147 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5340477f: startup date [Tue Jun 19 16:12:11 CST 2018]; root of context hierarchy
+16:12:19.226 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String top.haw.web.Example.home()
+16:12:19.231 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users1/get],methods=[GET]}" onto public java.util.List<top.haw.model.User1> top.haw.web.UserController1.getAll()
+16:12:19.232 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users1/add],methods=[POST]}" onto public java.lang.String top.haw.web.UserController1.add(top.haw.model.User1,org.springframework.validation.BindingResult)
+16:12:19.233 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users1/get/{id}],methods=[GET]}" onto public top.haw.model.User1 top.haw.web.UserController1.get(java.lang.Long)
+16:12:19.233 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users1/update],methods=[POST]}" onto public java.lang.String top.haw.web.UserController1.update(top.haw.model.User1)
+16:12:19.233 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users1/delete/{id}],methods=[POST]}" onto public java.lang.String top.haw.web.UserController1.delete(java.lang.Long)
+16:12:19.235 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+16:12:19.236 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+16:12:19.279 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:12:19.279 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:12:19.318 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:12:19.902 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+16:12:20.215 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-127.0.0.1-8080"]
+16:12:20.245 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-127.0.0.1-8080"]
+16:12:20.251 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+16:12:20.301 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+16:13:38.701 logback [http-nio-127.0.0.1-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+16:13:38.701 logback [http-nio-127.0.0.1-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+16:13:38.716 logback [http-nio-127.0.0.1-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+16:13:38.831 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - URL : http://localhost:8080/users1/get
+16:13:38.831 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - HTTP_METHOD : GET
+16:13:38.831 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - IP : 127.0.0.1
+16:13:38.833 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - CLASS_METHOD : top.haw.web.UserController1.getAll
+16:13:38.834 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - ARGS : []
+16:13:41.146 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - RESPONSE : [top.haw.model.User1@7c207233, top.haw.model.User1@5dbb7b0e, top.haw.model.User1@291f47b6, top.haw.model.User1@18ab798, top.haw.model.User1@7e44ec70, top.haw.model.User1@78a18bbd, top.haw.model.User1@2bd041e8, top.haw.model.User1@7fb2157d, top.haw.model.User1@26cc4197, top.haw.model.User1@52c4ca90, top.haw.model.User1@7b321e21, top.haw.model.User1@1444f5c7, top.haw.model.User1@5040ce21, top.haw.model.User1@24a40ef3, top.haw.model.User1@4f8ccf50, top.haw.model.User1@7c55e1ab, top.haw.model.User1@2ab219c6, top.haw.model.User1@2ee549f5]
+16:14:39.679 logback [Thread-3] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5340477f: startup date [Tue Jun 19 16:12:11 CST 2018]; root of context hierarchy
+16:14:39.680 logback [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+16:15:22.813 logback [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5340477f: startup date [Tue Jun 19 16:15:22 CST 2018]; root of context hierarchy
+16:15:23.076 logback [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+16:15:24.953 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+16:15:24.961 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:15:24.962 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+16:15:25.014 logback [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:15:25.015 logback [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2203 ms
+16:15:25.136 logback [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+16:15:25.140 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+16:15:25.141 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+16:15:25.141 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+16:15:25.141 logback [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+16:15:26.250 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5340477f: startup date [Tue Jun 19 16:15:22 CST 2018]; root of context hierarchy
+16:15:26.338 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/]}" onto public java.lang.String top.haw.web.Example.home()
+16:15:26.343 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users1/get],methods=[GET]}" onto public java.util.List<top.haw.model.User1> top.haw.web.UserController1.getAll()
+16:15:26.345 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users1/add],methods=[POST]}" onto public java.lang.String top.haw.web.UserController1.add(top.haw.model.User1,org.springframework.validation.BindingResult)
+16:15:26.345 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users1/get/{id}],methods=[GET]}" onto public top.haw.model.User1 top.haw.web.UserController1.get(java.lang.Long)
+16:15:26.345 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users1/update],methods=[POST]}" onto public java.lang.String top.haw.web.UserController1.update(top.haw.model.User1)
+16:15:26.346 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users1/delete/{id}],methods=[POST]}" onto public java.lang.String top.haw.web.UserController1.delete(java.lang.Long)
+16:15:26.347 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+16:15:26.348 logback [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+16:15:26.388 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:15:26.388 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:15:26.428 logback [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:15:27.055 logback [main] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+16:15:27.112 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-127.0.0.1-8080"]
+16:15:27.142 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-127.0.0.1-8080"]
+16:15:27.169 logback [main] INFO  o.a.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+16:15:27.182 logback [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8080 (http)
+16:15:29.796 logback [http-nio-127.0.0.1-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+16:15:29.796 logback [http-nio-127.0.0.1-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+16:15:29.891 logback [http-nio-127.0.0.1-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 95 ms
+16:15:29.965 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - URL : http://localhost:8080/users1/get
+16:15:29.965 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - HTTP_METHOD : GET
+16:15:29.965 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - IP : 127.0.0.1
+16:15:29.966 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - CLASS_METHOD : top.haw.web.UserController1.getAll
+16:15:29.967 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - ARGS : []
+16:15:30.723 logback [http-nio-127.0.0.1-8080-exec-1] INFO  top.haw.aop.WebLogAspect - RESPONSE : [top.haw.model.User1@72e08afd, top.haw.model.User1@3f4c5aa1, top.haw.model.User1@2c8c9689, top.haw.model.User1@1268573f, top.haw.model.User1@64a990ed, top.haw.model.User1@396d478b, top.haw.model.User1@711db6f1, top.haw.model.User1@211cd642, top.haw.model.User1@99a0474, top.haw.model.User1@5a185bd3, top.haw.model.User1@46aec45f, top.haw.model.User1@1c7a40e, top.haw.model.User1@5827a9e6, top.haw.model.User1@4079b7f2, top.haw.model.User1@70c50f9e, top.haw.model.User1@4c9e325c, top.haw.model.User1@2913dab0, top.haw.model.User1@24583e47]
+16:16:22.460 logback [http-nio-127.0.0.1-8080-exec-2] INFO  top.haw.aop.WebLogAspect - URL : http://localhost:8080/users1/add
+16:16:22.460 logback [http-nio-127.0.0.1-8080-exec-2] INFO  top.haw.aop.WebLogAspect - HTTP_METHOD : POST
+16:16:22.460 logback [http-nio-127.0.0.1-8080-exec-2] INFO  top.haw.aop.WebLogAspect - IP : 127.0.0.1
+16:16:22.460 logback [http-nio-127.0.0.1-8080-exec-2] INFO  top.haw.aop.WebLogAspect - CLASS_METHOD : top.haw.web.UserController1.add
+16:16:22.460 logback [http-nio-127.0.0.1-8080-exec-2] INFO  top.haw.aop.WebLogAspect - ARGS : [top.haw.model.User1@710aad9a, org.springframework.validation.BeanPropertyBindingResult: 0 errors]
+16:16:23.870 logback [http-nio-127.0.0.1-8080-exec-2] INFO  top.haw.aop.WebLogAspect - RESPONSE : OK
+16:18:23.382 logback [Thread-3] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5340477f: startup date [Tue Jun 19 16:15:22 CST 2018]; root of context hierarchy
+16:18:23.383 logback [Thread-3] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown

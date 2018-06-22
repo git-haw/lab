@@ -7,9 +7,15 @@
   <groupId>top.haw</groupId>
   <artifactId>lab</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>war</packaging>
+  <modules>
+    <module>config</module>
+    <module>common</module>
+    <module>server</module>
+    <module>web</module>
+  </modules>
+  <packaging>pom</packaging>
 
-  <name>lab Maven Webapp</name>
+  <name>lab Maven Webapp with springboot</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -20,89 +26,4 @@
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-  </properties>
-
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-web</artifactId>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-aop -->
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-aop</artifactId>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-core -->
-    <dependency>
-      <groupId>ch.qos.logback</groupId>
-      <artifactId>logback-core</artifactId>
-      <version>1.2.3</version>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/org.mybatis.spring.boot/mybatis-spring-boot-starter -->
-    <dependency>
-      <groupId>org.mybatis.spring.boot</groupId>
-      <artifactId>mybatis-spring-boot-starter</artifactId>
-      <version>1.3.2</version>
-    </dependency>
-    <dependency>
-      <groupId>mysql</groupId>
-      <artifactId>mysql-connector-java</artifactId>
-      <version>6.0.6</version>
-    </dependency>
-    <dependency>
-      <groupId>tk.mybatis</groupId>
-      <artifactId>mapper-spring-boot-starter</artifactId>
-      <version>1.1.4</version>
-    </dependency>
-
-  </dependencies>
-
-  <build>
-    <finalName>lab</finalName>
-      <plugins>
-        <plugin>
-          <groupId>org.springframework.boot</groupId>
-          <artifactId>spring-boot-maven-plugin</artifactId>
-        </plugin>
-        <plugin>
-          <groupId>org.mybatis.generator</groupId>
-          <artifactId>mybatis-generator-maven-plugin</artifactId>
-          <version>1.3.2</version>
-          <configuration>
-            <configurationFile>${basedir}/src/main/resources/generator/generatorConfig.xml</configurationFile>
-            <overwrite>true</overwrite>
-            <verbose>true</verbose>
-          </configuration>
-          <dependencies>
-            <dependency>
-              <groupId>mysql</groupId>
-              <artifactId>mysql-connector-java</artifactId>
-              <version>${mysql.version}</version>
-            </dependency>
-            <dependency>
-              <groupId>org.mybatis.generator</groupId>
-              <artifactId>mybatis-generator-core</artifactId>
-              <version>1.3.2</version>
-            </dependency>
-            <dependency>
-              <groupId>tk.mybatis</groupId>
-              <artifactId>mapper</artifactId>
-              <version>3.4.0</version>
-            </dependency>
-          </dependencies>
-        </plugin>
-      </plugins>
-  </build>
-</project>
+  </project>
